@@ -21,12 +21,11 @@ void rev_string(char *s)
 	_mid_idx = _strlen / 2;
 	_str_idx = _strlen - 1;
 
-	while (_str_idx >= _mid_idx)
+	while (_str_idx > _mid_idx)
 	{
 		temp = s[_strlen - 1 - _str_idx];
 		s[_strlen - 1 - _str_idx] = s[_str_idx];
 		s[_str_idx] = temp;
 		_str_idx--;
 	}
-	_putchar('\n');
 }
