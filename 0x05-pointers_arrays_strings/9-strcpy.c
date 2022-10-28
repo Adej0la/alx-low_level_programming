@@ -20,10 +20,7 @@ char *_strcpy(char *dest, char *src)
 	}
 	_strlen = i;
 
-	while (src[_strlen] <= 0)
-	{
-		dest[_strlen + 1] = 0;
-		_strlen++;
-	}
+	dest[_strlen++] = 0;
+
 	return (dest);
 }
