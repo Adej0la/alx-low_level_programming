@@ -26,8 +26,11 @@ char *str_concat(char *s1, char *s2)
 	int s1_len, s2_len, new_len, i, j;
 	char *new_str;
 
-	s1_len = (s1 == NULL) ? 0 : getlen(s1);
-	s2_len = (s2 == NULL) ? 0 : getlen(s2);
+	s1 = (s1 == NULL) ? "" : s1;
+	s2 = (s2 == NULL) ? "" : s2;
+
+	s1_len = getlen(s1);
+	s2_len = getlen(s2);
 	new_len = s1_len + s2_len;
 
 	new_str = malloc(sizeof(char) * (new_len + 1));
