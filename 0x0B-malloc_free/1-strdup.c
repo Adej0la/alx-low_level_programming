@@ -25,10 +25,10 @@ char *_strdup(char *str)
 			i++;
 		}
 
-		arrcpy = malloc(size * sizeof(char));
+		arrcpy = malloc((size + 1) * sizeof(char));
 
 		i = 0;
-		while (i < size)
+		while (i <= size)
 		{
 			if (arrcpy == NULL)
 			{
