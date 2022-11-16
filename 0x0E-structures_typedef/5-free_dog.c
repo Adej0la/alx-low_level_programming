@@ -3,11 +3,14 @@
 
 /**
  * free_dog - frees dogs
- * d: an instance of dog struct
+ * @d: an instance of dog struct
  */
 void free_dog(dog_t *d)
 {
-	free(d->owner);
-	free(d->name);
-	free(d);
+	if (d != NULL)
+	{
+		free(d->owner);
+		free(d->name);
+		free(d);
+	}
 }
