@@ -1,6 +1,5 @@
 #include <unistd.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * _putchar - prints a character to standard output
@@ -23,9 +22,9 @@ int main(void)
 	int i;
 
 	i = 0;
-	while (__BASE_FILE__[i])
+	while (__FILE__[i])
 	{
-		_putchar(__BASE_FILE__[i]);
+		_putchar(__FILE__[i]);
 		i++;
 	}
 	_putchar('\n');
