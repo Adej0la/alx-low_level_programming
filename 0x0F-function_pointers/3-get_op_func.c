@@ -8,7 +8,7 @@
  */
 int (*get_op_func(char *s))(int x, int y)
 {
-	op_type ops[] = {
+	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
