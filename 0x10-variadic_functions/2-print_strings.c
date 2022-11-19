@@ -1,7 +1,12 @@
 #include "variadic_functions.h"
 
 /**
-*/
+ * print_strings - print strings with a new line
+ * @separator: this separates the string arguments
+ * @n: the number of string arguments
+ *
+ * Return: Nothing
+ */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	typedef unsigned int uint;
@@ -20,7 +25,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		else
 			printf("%s", c_str);
 
-		if ( i != (n - 1) && separator != NULL)
+		if (i != (n - 1) && separator != NULL)
 		{
 			printf("%s", separator);
 		}
