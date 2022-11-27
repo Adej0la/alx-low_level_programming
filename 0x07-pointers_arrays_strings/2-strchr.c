@@ -24,12 +24,11 @@ char *_strchr(char *s, char c)
 		i++;
 	}
 
-	if (c == '\0')
-		return (s + i + 1);
-
 	if (i == 0 && c == '\0')
 		return (s + 0);
-	
+
+	if (c == '\0')
+		return (s + i + 1);
 
 	return (NULL);
 }
